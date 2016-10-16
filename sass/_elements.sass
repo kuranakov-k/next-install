@@ -1,7 +1,18 @@
+body
+	font-family: "Open Sans", Arial, sans-serif
 .clearfix::after
 	content: ''
 	display: table
 	clear: both
-.container
-	max-width: 1280px
+.wrapper
+	width: $big-res
 	margin: 0 auto
+	// background-color: rgba(50, 0, 100, 0.2)
+.container
+	// background-color: rgba(50, 50, 50, 0.2)
+	margin: 0 auto
+	width: $sm-res
+a
+	text-decoration: none
+	&:hover
+		text-decoration: underline

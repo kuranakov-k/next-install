@@ -1,4 +1,101 @@
 .header-wrapper
-	background: url(../img/header-bg.jpg) 0 0 no-repeat
-	background-size: 100%
+	position: relative
+	background: rgba(0, 0, 0, 0.3) url(../img/header-bg.jpg) 0 0 no-repeat
+	background-size: cover
 	min-height: 750px
+.header-hand
+	background: url(../img/header-hand.png) 0 0 no-repeat
+	position: absolute
+	right: 375px
+	bottom: 0
+	width: 609px
+	height: 578px
+	z-index: 2
+.header-top
+	background-color: rgba(255, 255, 255, 0.4)
+	position: relative
+	top: $bg-dist
+	padding-top: 5px
+	margin-bottom: 63px
+	min-height: 59px
+.header-logo
+	display: inline-block
+.header-nav
+	padding: 0
+	margin: 0
+	display: inline-block
+	vertical-align: top
+	padding-top: 4px
+	margin-left: 67px
+	font-size: 0
+.nav-item
+	display: inline-block
+	vertical-align: top
+	font-size: 14px
+	margin-top: 3px
+	a
+		display: block
+		padding: 10px 27px
+		color: $black
+		&:hover
+			color: $green
+.header-tel-block
+	display: inline-block
+	width: 220px
+	float: right
+	text-align: right
+.header-tel
+	padding-top: 5px
+	font-size: 24px
+	margin: 0
+	font-weight: 400
+	margin-bottom: 3px
+.header-schedule
+	margin: 0
+	font-size: 12px
+.header-mid
+	position: relative
+	top: $bg-dist
+	margin-bottom: 63px
+.header-title
+	font-size: 60px
+	line-height: 1.18
+	margin: 0
+	padding: 0
+	font-weight: 400
+	width: 470px
+	margin-bottom: 29px
+.header-info
+	font-size: 24px
+.header-bottom
+	position: relative
+	top: $bg-dist
+	font-size: 0
+	&-bg
+		height: 127px
+		background: linear-gradient( to right, rgba(98,154,0, 0.1), rgba(98,154,0, 0.6) 500px, rgba(98,154,0, 0.6) 60%, transparent 60%)
+		z-index: 1
+.features-item
+	width: 127px
+	height: 127px
+	box-sizing: border-box
+	display: inline-block
+	color: $white
+	font-size: 18px
+	margin-right: 87px
+	&-comfort
+		background: url(../img/header-ico-chair.png) 12px 24px no-repeat
+	&-security
+		background: url(../img/header-ico-shield.png) 12px 24px no-repeat
+	&-control
+		background: url(../img/header-ico-control.png) 0 28px no-repeat
+.item-title-comfort
+	margin-top: 90px
+.item-title-security
+	margin-top: 90px
+	position: relative
+	right: 25px
+.item-title-control
+	margin-top: 90px
+	position: relative
+	right: 17px
