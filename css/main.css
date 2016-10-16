@@ -1,0 +1,24 @@
+/* Project variables */
+/* Librarys */
+@import url(../bower_libs/normalize-css/normalize.css);
+/* Project Elements */
+header {
+  background-color: rgba(0, 255, 0, 0.1);
+  min-height: 100px; }
+
+.header__menu {
+  margin: 0; }
+  .header__menu li {
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
+
+.container {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  min-height: 400px; }
+
+/* Pages Import */
