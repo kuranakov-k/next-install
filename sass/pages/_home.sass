@@ -211,7 +211,7 @@
 /// What we do
 /////////////////
 .what-we-do
-	margin-bottom: 100px
+	margin-bottom: 103px
 .what-we-do-inner
 	margin-top: 20px
 	padding: 25px 0
@@ -233,6 +233,7 @@
 		padding-top: 20px
 		padding-left: 8px
 		margin-right: 36px
+
 		&:last-child
 			margin-right: 0
 			max-width: 160px
@@ -268,8 +269,13 @@
 ///////////////////////
 /// Consulting-order
 ///////////////////////
+.consulting-order
+	margin-bottom: 15px
 .consulting-order-info
 	text-align: center
+	margin-top: 20px
+	margin-bottom: 42px
+	font-size: 18px
 	font-weight: 300
 	color: $primary
 .consulting-form-item
@@ -278,7 +284,16 @@
 	height: 50px
 	box-sizing: border-box
 	margin-right: 30px
+	font-weight: 300
+	font-size: 18px
+	margin-bottom: 113px
 	&:last-child
 		margin-right: 0
 input.consulting-form-item
-	padding-left: 20px
+	padding-left: 17px
+	&[required]
+		outline-color: #ff7474
+.btn-consulting
+	@include btn(#537500, #79a100)
+	color: $white
+	font-weight: 700

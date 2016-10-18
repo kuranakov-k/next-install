@@ -1,0 +1,103 @@
+.what-is-sh
+	font-size: 16px
+	line-height: 24px
+	&-about
+		margin-bottom: 24px
+	h3
+		font-size: 16px
+		line-height: 24px
+		font-weight: 600
+		margin-bottom: 24px
+	ul
+		padding: 0
+		list-style: none
+		margin-bottom: 24px
+		li
+			padding-left: 9px
+			max-width: 1145px
+			position: relative
+
+			&:before
+				position: absolute
+				left: 0
+				top: 12px		
+				content: ''
+				display: block
+
+				width: 5px
+				border-top: 1px solid #000
+
+//////////////////////////////////
+/// Interactive-house
+//////////////////////////////////
+
+.interactive-house
+	margin-top: 49px
+	position: relative
+	margin-bottom: 97px
+	&-help
+		position: absolute
+		width: 100px
+		top: 68px
+		line-height: 17px
+		left: 0
+		font-size: 14px
+		font-weight: 300
+		font-style: italic
+		&:after
+			position: absolute
+			top: 61px
+			right: -160px
+			content: ''
+			display: block
+			width: 199px
+			height: 93px
+			background: url(../img/house-arrow.png) 0 0 no-repeat
+.area
+	position: absolute
+	top: 0
+	left: 0
+	width: 31px
+	height: 31px
+	border-radius: 50%
+	background: $green
+	box-shadow: 1px 1px 5px $black
+	
+	&-02
+		top: 382px
+		left: 517px
+	span
+		position: absolute
+		top: 4px
+		left: 12px
+		font-size: 16px
+		color: $white
+	&-info
+		position: absolute
+		top: -166px
+		left: -178px
+		display: none
+		width: 397px
+		box-sizing: border-box
+		border-radius: 3px
+		height: 145px
+		background-color: $white
+		padding-left: 45px
+		padding-top: 12px
+		box-shadow: 10px 10px 55px $black
+		ul
+			margin-top: 10px
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			bottom: -40px
+			left: 174px;
+			@include triangle(bottom, 20px, #fff)
+
+	&:hover .area-info
+		display: block
+.area-title
+	font-size: 16px
+	font-weight: 600
+	margin-bottom: 0
