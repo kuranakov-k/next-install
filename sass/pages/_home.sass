@@ -1,6 +1,284 @@
-.projects-container
-	background: pink url(../img/bg-home-our-projects.jpg)
+.consultation-order
+	position: relative
+	bottom: 125px
+	text-align: center
+	font-size: 18px
+	color: $white
+.consult-inner
+	width: 707px
+	box-sizing: border-box
+	height: 118px
+	background: linear-gradient(to bottom, #fffefe, #cccccc)
+	border: 1px solid #e6e6e6
+	border-radius: 65px
+	padding-top: 36px	
+	input
+		display: block
+		float: left
+		box-sizing: border-box
+		border: none
+		border: 1px solid #e6e6e6
+		width: 187px
+		padding: 13px 0
+		margin-right: 33px
+		padding-left: 15px
+		font-size: 16px
+		color: #808080
+.consult-form
+	padding-left: 30px
+.consult-dop-border
+	padding: 9px
+	width: 707px
+	height: 118px
+	border-radius: 85px
+	background: linear-gradient(to bottom, #fefefd, #cdcccd)
+.btn-consult-order
+	position: relative
+	z-index: 4
+	color: $white
+	@include btn(#94c500, #4f7000)
+.section-title
+	text-align: center
+	font-size: 36px
+	font-weight: 300
+	margin-bottom: 0
+.tech
+	margin-top: -85px
+	margin-bottom: 85px
+.tech-inner
+	padding-top: 50px
+	width: 1170px
+	font-size: 0
+.tech-item
+	display: inline-block
+	width: 152px
+	height: 152px
+	margin-right: 102px
+	border-radius: 50%
+	&:last-child
+		margin-right: 0
+	&-title
+		font-size: 18px
+		text-align: center
+		padding-top: 157px
+		white-space: nowrap
+	&-sh
+		background: $green url(../img/ico-smart-house.png) center center no-repeat
+	&-multimedia
+		background: $green url(../img/ico-multimedia.png) center center no-repeat
+	&-electric
+		background: $green url(../img/ico-electric.png) center center no-repeat
+	&-security
+		background: $green url(../img/ico-security.png) center center no-repeat
+	&-climate
+		background: $green url(../img/ico-climat.png) center center no-repeat
+
+///////////////////
+/// Projects
+///////////////////		
+.projects
+	margin-bottom: 62px
+.projects-inner
+	background: url(../img/bg-home-our-projects.jpg)
+	margin-top: 10px
+	padding-top: 25px
+	padding-bottom: 30px
+	margin-bottom: 35px
+.gallery-masonry
+	margin-bottom: 12px
 .projects-gallery
-	min-height: 900px
+	padding-bottom: 35px
+	text-align: center
+	&-block
+		position: relative
+		float: left
+		margin-bottom: 15px
+		img
+			display: block
+.projects-gallery-more
+	font-size: 14px
+	color: #000
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+.gallery-block-info
+	opacity: 0
+	box-sizing: border-box
+	padding-left: 47px
+	padding-top: 30px
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(70, 110, 0, 0.5)
+	color: transparent
+	color: $white
+	&:hover
+		opacity: 1
+		background: rgba(70, 110, 0, 0.5) url(../img/ico-magnifier.png) center center no-repeat
+		cursor: pointer
+.block-info-title
+	margin: 0
+	width: 266px
+	font-size: 24px
+	border-bottom: 1px solid
+	padding-bottom: 15px
+	margin-bottom: 20px
+.block-info-describtion
+	width: 266px
+	margin: 0
+	font-size: 14px	
 .what-we-do-inner
 	background-color: #f7faf2
+//////////////////////////////
+//// Slider
+//////////////////////////////
+.projects-slider
+	background-color: #fff
+.project-slide
+	padding: 36px 70px 32px 70px
+	outline: none
+	cursor: pointer
+.slider-photo
+	float: left
+.slider-block-info
+	padding-left: 240px
+.slider-title
+	font-size: 16px
+	line-height: 24px
+	margin-top: 0
+	margin-bottom: 25px
+.slider-info
+	font-size: 16px
+	line-height: 24px
+	color: $primary
+
+///////////////////
+/// About
+///////////////////
+.about
+	margin-bottom: 25px
+.about-block
+	margin-top: 17px
+	float: left
+	width: 570px
+	font-size: 16px
+	line-height: 24px
+	color: $primary
+	margin-bottom: 45px
+	&:nth-child(2n)
+		margin-right: 30px
+.about-features
+	clear: both
+	padding: 0 30px
+.about-features-item
+	width: 157px
+	height: 140px
+	background-position: center center
+	background-repeat: no-repeat
+	float: left
+	margin-right: 72px
+	margin-left: 75px
+	margin-bottom: 130px
+	text-align: center
+	&:nth-child(4n+1)
+		margin-left: 0
+	&:nth-child(4n+4)
+		margin-right: 0
+	p
+		padding-top: 150px
+		font-size: 16px
+		color: $primary
+.features-item-20
+	background-image: url(../img/home-about/20.png)
+.features-item-600
+	background-image: url(../img/home-about/600.png)
+.features-item-business
+	background-image: url(../img/home-about/business.png)
+.features-item-key
+	background-image: url(../img/home-about/key.png)
+.features-item-handshake
+	background-image: url(../img/home-about/handshake.png)	
+.features-item-globe
+	background-image: url(../img/home-about/globe.png)
+.features-item-consultation
+	background-image: url(../img/home-about/consultation.png)
+.features-item-cup
+	background-image: url(../img/home-about/cup.png)
+
+/////////////////
+/// What we do
+/////////////////
+.what-we-do
+	margin-bottom: 100px
+.what-we-do-inner
+	margin-top: 20px
+	padding: 25px 0
+.what-we-do-list
+	list-style: none
+	font-size: 0
+	margin: 0
+	padding: 0
+	li
+		position: relative
+		display: inline-block
+		float: left
+		vertical-align: top
+		max-width: 233px
+		height: 76px
+		box-sizing: border-box
+		background-color: #e1ecce
+		font-size: 17px
+		padding-top: 20px
+		padding-left: 8px
+		margin-right: 36px
+		&:last-child
+			margin-right: 0
+			max-width: 160px
+		&:not(:first-child)
+			&:before
+				content: ''
+				display: block
+				width: 0
+				border: 38px solid transparent
+				border-top-color: #e1ecce
+				border-bottom-color: #e1ecce
+				position: absolute
+				top: 0
+				left: -29px
+				border-left: 30px solid transparent
+
+		&:after
+			@include triangle(right, 39px, #e1ecce)
+			position: absolute
+			right: -68px
+			top: -1px
+			border-left: 30px solid #e1ecce
+		span
+			font-size: 48px
+			color: #4d4d4d
+			float: left
+			position: relative
+			bottom: 7px
+			opacity: 0.9
+			font-weight: 300
+			margin-right: 2px
+
+///////////////////////
+/// Consulting-order
+///////////////////////
+.consulting-order-info
+	text-align: center
+	font-weight: 300
+	color: $primary
+.consulting-form-item
+	float: left
+	width: 270px
+	height: 50px
+	box-sizing: border-box
+	margin-right: 30px
+	&:last-child
+		margin-right: 0
+input.consulting-form-item
+	padding-left: 20px

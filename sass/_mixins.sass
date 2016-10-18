@@ -23,3 +23,10 @@
 	font-size: $font-size
 	line-height: $line-height
 	font-weight: $font-weight		
+//////////////////////////////////////////
+/// btn
+//////////////////////////////////////////
+@mixin btn($color1, $color2)
+	background: linear-gradient(to bottom, $color1, $color2)
+	&:hover
+		background: linear-gradient(to bottom, $color2, $color1)

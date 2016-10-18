@@ -1,42 +1,96 @@
 //= ../templates/_start_main.html
 			<div class="consultation-order container">
-				<form action="post">
-					<input type="text" name="name" placeholder="Имя">
-					<input type="text" name="tel" placeholder="Телефон">
-					<input type="submit" value="Заказать">
-				</form>
+				<p>Закажите консультацию специалиста</p>
+				<div class="consult-dop-border container">
+					<div class="consult-inner">
+						<form class="consult-form clearfix" action="post">
+							<input type="text" name="name" placeholder="Имя">
+							<input type="text" name="tel" placeholder="Телефон">
+							<button class="btn btn-consult-order" type="submit">Заказать</button>
+						</form>
+					</div> <!--consult-inner-->
+				</div>
 			</div>
 			<section class="tech container">
-				<h2 class="section-title">Мы профессионально владеем технологиями</h2>
-				<div class="tech-item">Умный дом</div>
-				<div class="tech-item">Мультимедиа</div>
-				<div class="tech-item">Электрика</div>
-				<div class="tech-item">Безопасность</div>
-				<div class="tech-item">Климат-контроль</div>
+			<h2 class="section-title">Мы профессионально владеем технологиями</h2>
+				<div class="tech-inner">
+					<div class="tech-item tech-item-sh"><p class="tech-item-title">Умный дом</p></div>
+					<div class="tech-item tech-item-multimedia"><p class="tech-item-title">Мультимедиа</p></div>
+					<div class="tech-item tech-item-electric"><p class="tech-item-title">Электрика</p></div>
+					<div class="tech-item tech-item-security"><p class="tech-item-title">Безопасность</p></div>
+					<div class="tech-item tech-item-climate"><p class="tech-item-title">Климат-контроль</p></div>
+				</div>
 			</section>
+
+<!-- Projects -->
+
 			<section class="projects">
 				<h2 class="section-title">Наши проекты</h2>
-				<div class="projects-container">
-					<div class="projects-gallery container">
-						<div class="projects-gallery-block"></div>
-						<div class="projects-gallery-block"></div>
-						<div class="projects-gallery-block"></div>
-						<div class="projects-gallery-block"></div>
-						<div class="projects-gallery-block"></div>
-						<div class="projects-gallery-block"></div>
-						<div class="projects-gallery-block"></div>
+				<div class="projects-inner">
+					<div class="projects-gallery container clearfix">
+						<div class="gallery-masonry">
+							<div class="projects-gallery-block">
+								<img src="img/home-gallery/1.jpg" alt="photo1">
+								<div class="gallery-block-info">
+									<p class="block-info-title">Мультимедиа система в гостиной</p>
+									<p class="block-info-describtion">Наши специалисты проделали колоссальную работу по проектировки и установке смарт-системы</p>
+								</div>
+							</div>
+							<div class="projects-gallery-block">
+								<img src="img/home-gallery/2.jpg" alt="photo2">
+								<div class="gallery-block-info"></div>
+							</div>
+							<div class="projects-gallery-block">
+								<img src="img/home-gallery/3.jpg" alt="photo3">
+								<div class="gallery-block-info"></div>
+							</div>
+							<div class="projects-gallery-block">
+								<img src="img/home-gallery/4.jpg" alt="photo4">
+								<div class="gallery-block-info"></div>
+							</div>
+							<div class="projects-gallery-block">
+								<img src="img/home-gallery/5.jpg" alt="photo5">
+								<div class="gallery-block-info"></div>
+							</div>
+							<div class="projects-gallery-block">
+								<img src="img/home-gallery/7.jpg" alt="photo6">
+								<div class="gallery-block-info"></div>
+							</div>
+							<div class="projects-gallery-block">
+								<img src="img/home-gallery/6.jpg" alt="photo7">
+								<div class="gallery-block-info"></div>
+							</div>
+						</div> <!--gallery-masonry-->
+						<a href="#" class="projects-gallery-more">Смотреть все проекты</a>
 					</div><!--projects-gallery-->
-				</div>
-				<a href="#" class="projects-gallery-more">Смотреть все проекты</a>
-				<div class="projects-slider container">
-					<div class="project-slide">
-						<h3 class="slider-title">Вячеслав Муругов о системе «умный дом»</h3>
-						<p class="slider-info">Давно посматривал на технологию «умный дом», но всё не верилось, что сегодня есть путные варианты, думал это будет возможно нескоро. Из любопытства обратился в Next-Install, поначалу отнёсся к предложению приехать в офис и ознакомиться с возможностями системы со скепсисом. Как же я ошибался! Давно надо было установить себе домой это чудо! Доволен: теперь у меня чуть ли не каждая щеколда в доме под контролем. Рекомендую.</p>
-					</div> <!--projects-slide-->
+
+					<div class="projects-slider">
+					<div class="container">
+						<div id="js-projects-slider">
+							<div class="project-slide">
+								<img class="slider-photo" src="img/photo-murugov.png" alt="Муругов Вячеслав" width="200" height="200">
+								<div class="slider-block-info">
+									<h3 class="slider-title">Вячеслав Муругов о системе «умный дом»</h3>
+									<p class="slider-info">Давно посматривал на технологию «умный дом», но всё не верилось, что сегодня есть путные варианты, думал это будет возможно нескоро. Из любопытства обратился в Next-Install, поначалу отнёсся к предложению приехать в офис и ознакомиться с возможностями системы со скепсисом. Как же я ошибался! Давно надо было установить себе домой это чудо! Доволен: теперь у меня чуть ли не каждая щеколда в доме под контролем. Рекомендую.</p>
+								</div>
+							</div> <!--projects-slide-->
+							<div class="project-slide">
+								<img class="slider-photo" src="img/photo-murugov.png" alt="Муругов Вячеслав" width="200" height="200">
+								<div class="slider-block-info">
+									<h3 class="slider-title">Вячеслав Муругов о системе «умный дом»</h3>
+									<p class="slider-info">Давно посматривал на технологию «умный дом», но всё не верилось, что сегодня есть путные варианты, думал это будет возможно нескоро. Из любопытства обратился в Next-Install, поначалу отнёсся к предложению приехать в офис и ознакомиться с возможностями системы со скепсисом. Как же я ошибался! Давно надо было установить себе домой это чудо! Доволен: теперь у меня чуть ли не каждая щеколда в доме под контролем. Рекомендую.</p>
+								</div>
+							</div> <!--projects-slide-->
+						</div>
+					</div><!--container-->
 				</div> <!--projects-slider-->
+			</div>
+				
+<!-- About -->
+
 			</section>
-			<section class="about container">
-				<h2 class="section-title"></h2>
+			<section class="about container clearfix">
+				<h2 class="section-title">О компании</h2>
 				<div class="about-block">
 					<p class="about-info">
 						Next Install без малого 20 лет занимается реализацией проектов домашних кинотеатров, аудио-визуального оборудования, акустической обработкой и шумоизоляцией помещений, автоматизации жилых домов и квартир, а также коммерческих объектов. На счету Next Install более 600 реализованных проектов различной сложности.
@@ -47,40 +101,58 @@
 						Мы активно сотрудничаем с архитекторами и дизайнерами, оказывая помощь в проектировании сложных технических решений, помогаем подобрать оборудование в соответствии с дизайном и требованиями заказчиков. Обращаясь в Next Install, вы обретаете надежного партнера, мы занимаемся реализацией проектов под ключ, собственно дистрибьюцией известных марок оборудования, а также сотрудничаем со всеми поставщиками российского рынка.
 					</p>
 				</div> <!--about-block-->
-				<div class="about-features">
-					<div class="about-features-item features-item-20"></div>
-					<div class="about-features-item features-item-600"></div>
-					<div class="about-features-item features-item-business"></div>
-					<div class="about-features-item features-item-key"></div>
-					<div class="about-features-item features-item-handshake"></div>
-					<div class="about-features-item features-item-globe"></div>
-					<div class="about-features-item features-item-consultation"></div>
-					<div class="about-features-item features-item-cup"></div>
+				<div class="about-features clearfix">
+					<div class="about-features-item features-item-20">
+						<p>20 лет успешной работы на рынке</p>
+					</div>
+					<div class="about-features-item features-item-600">
+						<p>было реализовано более 600 проектов</p>
+					</div>
+					<div class="about-features-item features-item-business">
+						<p>грамотно поставленные бизнес-процессы</p>
+					</div>
+					<div class="about-features-item features-item-key">
+						<p>установка под ключ</p>
+					</div>
+					<div class="about-features-item features-item-handshake">
+						<p>индивидуальный подход</p>
+					</div>
+					<div class="about-features-item features-item-globe">
+						<p>работаем со всеми поставщиками оборудования</p>
+					</div>
+					<div class="about-features-item features-item-consultation">
+						<p>профессиональная консультация</p>
+					</div>
+					<div class="about-features-item features-item-cup">
+						<p>опытные штатные специалисты</p>
+					</div>
 				</div> <!--about-features-->
 			</section>
 			<section class="what-we-do">
 				<h2 class="section-title">Что мы делаем</h2>
 				<div class="what-we-do-inner">
 					<div class="container">
-						<ul>
-							<li>Составление технического задания</li>
-							<li>Проектирование любой сложности</li>
-							<li>Монтаж систем под ключ</li>
-							<li>Пусконаладка</li>
-							<li>Сервисное обслуживание</li>
+						<ul class="what-we-do-list clearfix">
+							<li><span>1</span>Составление технического задания</li>
+							<li><span>2</span>Проектирование любой сложности</li>
+							<li><span>3</span>Монтаж систем под ключ</li>
+							<li><span>4</span>Пусконаладка</li>
+							<li><span>5</span>Сервисное обслуживание</li>
 						</ul>
 					</div>
 				</div>
 			</section>
 			<section class="consulting-order">
-				<h2 class="section-title">Закажите консультацию наших специалистов</h2>
-				<p class="consulting-order-info">Менеджер свяжется с вами в ближайшее время</p>
-				<form action="post">
-					<input type="text" placeholder="Имя" required>
-					<input type="text" placeholder="Телефон" required>
-					<input type="text" placeholder="E-mail" required>
-					<input type="submit" value="Отправить">
-				</form>
+				<div class="container">
+					<h2 class="section-title">Закажите консультацию наших специалистов</h2>
+					<p class="consulting-order-info">Менеджер свяжется с вами в ближайшее время</p>
+					<form action="post" class="clearfix">
+						<input class="consulting-form-item" type="text" placeholder="Имя" required>
+						<input class="consulting-form-item" type="text" placeholder="Телефон" required>
+						<input class="consulting-form-item" type="text" placeholder="E-mail" required>
+						<button class="consulting-form-item" type="submit">Отправить</button>
+					</form>
+				</div>
 			</section>
 
 
