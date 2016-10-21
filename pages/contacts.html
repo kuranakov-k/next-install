@@ -1,3 +1,59 @@
 //= ../templates/_start.html
-
+	<div class="breadcrumbs breadcrumbs-inner">
+	<div class="container">
+		<ul class="clearfix">
+			<li><a href="index.html">Главная</a></li>
+			<li><span>&mdash; Контакты</span></li>
+		</ul>
+	</div>
+</div> <!--breadcrumbs-->
+<div class="container container-contacts">
+	<div id="modal-message" class="modal-message clearfix">
+		<p class="modal-title">Оставьте сообщение</p>
+		<form action="post">
+			<input type="text" class="input-name" name="name" placeholder="Имя" required>
+			<input type="text" class="input-tel" name="tel" placeholder="Телефон" required>
+			<input type="text" class="input-email" name="email" placeholder="E-mail" required>
+			<textarea name="message" class="input-message" placeholder="Сообщение"></textarea required>
+			<div class="block-captcha clearfix">
+				<p>Введие текст с картинки</p>
+				<img src="img/captcha.jpg" alt="captcha" width="112" height="40">
+				<input type="text" required>
+			</div>
+			<button class="btn btn-modal" type="submit">Отправить</button>
+		</form>
+	</div>
+	<h1 class="page-title">Контакты</h1>
+	<div class="table-block">
+		<table class="contacts-table">
+			<tr>
+				<td class="table-cell-name">Адрес:</td>
+				<td class="table-cell-info">Москва, ул. Образцова, 14</td>
+			</tr>
+			<tr>
+				<td class="table-cell-name">Телефон:</td>
+				<td class="table-cell-info">+7 (495) 668-04-64</td>
+			</tr>
+			<tr>
+				<td class="table-cell-name">E-mail:</td>
+				<td class="table-cell-info">info@next-hifi.ru</td>
+			</tr>
+			<tr>
+				<td class="table-cell-name">Время работы:</td>
+				<td class="table-cell-info">Пн - Пт, с 10:00 до 18:00</td>
+			</tr>
+			<tr class="table-email">
+				<td class="table-cell-name">Мы в соцсетях:</td>
+				<td class="table-cell-info clearfix">
+					<a class="table-social table-social-vk" href="#"></a>
+					<a class="table-social table-social-fb" href="#"></a>
+					<a class="table-social table-social-tw" href="#"></a>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div id="map" class="map">
+	<img src="img/map.jpg" alt="карта">
+</div>
 //= ../templates/_end.html
